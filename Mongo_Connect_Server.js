@@ -25,8 +25,8 @@ app.use('/uploads', express.static('Admission_Documents_Upload'));
 app.use('/api/tc', tcRoutes);
 
 // Yeh MongoDB database 'school_db' se local connection establish karta hai.
-mongoose.connect('mongodb://127.0.0.1:27017/school_db')
-  .then(() => console.log('MongoDB Connected to school_db!'))
+mongoose.connect('mongodb+srv://techfaizan001_db_user:YIFouuqiQg7svzhS@cluster0.jlxbung.mongodb.net/gn_academy?retryWrites=true&w=majority')
+  .then(() => console.log('MongoDB Connected to Atlas!'))
   .catch((err) => console.error('Database Connection Error:', err));
 
 // Yeh Gmail service ke sath mail transporter configure karta hai.
